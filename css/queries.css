@@ -1,0 +1,10 @@
+@media screen and (max-width:600px) {
+    .slide{
+      height:fit-content;
+    }
+    .container{
+  height:200px;}
+  .carousel__btn {
+      top: 50%;
+  }
+  }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/Compound Path + Path.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,17 +12,77 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <title>Tourism</title>
   </head>
   <body>
+    <header class="main-header">
+      <img src="img/1.01_Logo.png" alt="" />
+      <nav class="main-navigation">
+        <ul class="navigation_ul">
+          <li class="nav-item"><a href="#" class="nav-anchor">HOME</a></li>
+          <li class="nav-item"><a href="#" class="nav-anchor">ABOUT US</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-anchor">OUR SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-anchor">OUR PACKAGE</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
+    <main class="main-content">
+      <section class="carousel__section">
+        <div class="container" data-autoplay="false">
+          <div class="slide slider__1">
+            <div class="slider__text">
+              <p class="slider__promotion">From $199/person</p>
+              <h1 class="slider__title">Discover Greece</h1>
+              <p class="slider__subtext">TRAVEL WITH UNIQUE EXPERIENCE</p>
+            </div>
+          </div>
+          <div class="slide slider__1">
+            <div class="slider__text">
+              <p class="slider__promotion">From $199/person</p>
+              <h2 class="slider__title">Discover Greece</h2>
+              <p class="slider__subtext">TRAVEL WITH UNIQUE EXPERIENCE</p>
+            </div>
+          </div>
+          <div class="slide slider__1">
+            <div class="slider__text">
+              <p class="slider__promotion">From $199/person</p>
+              <h2 class="slider__title">Discover Greece</h2>
+              <p class="slider__subtext">TRAVEL WITH UNIQUE EXPERIENCE</p>
+            </div>
+          </div>
+          <div class="slide slider__1">
+            <div class="slider__text">
+              <p class="slider__promotion">From $199/person</p>
+              <h2 class="slider__title">Discover Greece</h2>
+              <p class="slider__subtext">TRAVEL WITH UNIQUE EXPERIENCE</p>
+            </div>
+          </div>
 
+          <button class="prev carousel__btn">&larr;</button>
+          <button class="next carousel__btn">&rarr;</button>
+        </div>
+      </section>
 
+      <section class="hot-services">
+        <div class="grid grid--4 grid__dynamic">
+          <div class="grid__side-text">
+            <p class="grid__paragraph">DISCOVER</p>
+            <h2 class="heading--secondary heading--secondary__bg">Our Hot Services</h2>
+            <p class="grid__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deleniti neque aliquam hic, esse natus.</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-
-    
+    <script src="js/carousel.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

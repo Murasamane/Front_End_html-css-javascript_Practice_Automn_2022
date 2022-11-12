@@ -7,3 +7,32 @@
 html{
     font-size: 62.5%;
 }
+
+.grid{
+    display: grid;
+}
+
+.grid--4{
+    grid-template-columns: repeat(4,1fr);
+    gap: 2.4rem;
+}
+.heading--secondary{
+    font-family: 'Raleway';
+    font-size: 2.6rem;
+    color: #1A1A1B;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.heading--secondary__bg{
+    background-image: url('../img/Shape\ 1.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.grid__paragraph{
+    font-family: 'Raleway';
+    font-size: 1.6rem;
+    color: #8D8D8D;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
