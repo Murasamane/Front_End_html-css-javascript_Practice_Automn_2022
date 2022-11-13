@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/modal.css" />
     <link rel="stylesheet" href="css/carousel.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/queries.css" />
@@ -31,6 +32,9 @@
             <a href="#" class="nav-anchor">OUR PACKAGE</a>
           </li>
         </ul>
+        <button class="burger__btn">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
       </nav>
     </header>
 
@@ -75,14 +79,112 @@
         <div class="grid grid--4 grid__dynamic">
           <div class="grid__side-text">
             <p class="grid__paragraph">DISCOVER</p>
-            <h2 class="heading--secondary heading--secondary__bg">Our Hot Services</h2>
-            <p class="grid__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deleniti neque aliquam hic, esse natus.</p>
+            <h2 class="heading--secondary heading--secondary__bg">
+              Our Hot Services
+            </h2>
+            <p class="grid__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              deleniti neque aliquam hic, esse natus.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal">
+          <button class="close__btns">&times;</button>
+          <div class="modal__content">
+            <img src="" alt="" class="modal_img" />
+            <p class="modal__description"></p>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </section>
+
+      <section class="tour__video">
+        <div class="video__text">
+          <p class="video__paragraph">DISCOVER</p>
+          <h2 class=".heading--secondary video__title">Watch Our Video Tour</h2>
+        </div>
+        <div class="video__div">
+          <video class="tour__video__youtube" controls="true">
+            <source
+              src="https://www.youtube.com/watch?v=eMF5K4UC9B4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </section>
+
+      <section class="counts">
+        <div class="grid grid--4 grid-justify__align">
+          <div class="count__cards">
+            <img src="img/Layer 3.png" alt="" class="count--card__img" />
+            <h2 class="count__numbers">120,859</h2>
+            <p class="count__paragraph">HAPPY TRAVELLERS</p>
+          </div>
+
+          <div class="count__cards">
+            <img src="img/Layer 1.png" alt="" class="count--card__img" />
+            <h2 class="count__numbers">120,859</h2>
+            <p class="count__paragraph">HAPPY TRAVELLERS</p>
+          </div>
+
+          <div class="count__cards">
+            <img src="img/Layer 5.png" alt="" class="count--card__img" />
+            <h2 class="count__numbers">120,859</h2>
+            <p class="count__paragraph">HAPPY TRAVELLERS</p>
+          </div>
+
+          <div class="count__cards">
+            <img src="img/Rounded Rectangle 1 copy 2.png" alt="" class="count--card__img" />
+            <h2 class="count__numbers">120,859</h2>
+            <p class="count__paragraph">HAPPY TRAVELLERS</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular--destinations">
+        <p class="destination__paragraph">WE OFFER</p>
+        <h2 class="destination__main--title">Popular Tour Package</h2>
+        <div class="flexbox padded__grid">
+          <div class="destination__card">
+            <img src="img/tom-grimbert-661519-unsplash.png" width="267" height="246" class="destination__img" alt="">
+            <div class="destination__text honeymoon">
+              <p class="destination__price">$299/person</p>
+              <h3 class="destination__title">Blue Beauty of Greece</h3>
+              <p class="destination__duration">6 Days/6 Nights</p>
+            </div>
+          </div>
+
+          <div class="destination__card">
+            <img src="img/alex-block-429051-unsplash.png" width="267" height="246" class="destination__img" alt="">
+            <div class="destination__text holiday">
+              <p class="destination__price">$178/person</p>
+              <h3 class="destination__title">Nature of Phuket</h3>
+              <p class="destination__duration">3 Days/4 Nights</p>
+            </div>
+          </div>
+
+          <div class="destination__card">
+            <img src="img/anthony-delanoix-460516-unsplash.png" width="267" height="246" class="destination__img" alt="">
+            <div class="destination__text holiday">
+              <p class="destination__price">$1111/person</p>
+              <h3 class="destination__title">World Tour of Paris</h3>
+              <p class="destination__duration">7 Days/8 Nights</p>
+            </div>
           </div>
         </div>
       </section>
     </main>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script src="js/carousel.js"></script>
+    <script src="js/modal.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

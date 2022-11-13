@@ -11,10 +11,24 @@ html{
 .grid{
     display: grid;
 }
-
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+}
+.padded__grid{
+    padding: 2.4rem;
+}
 .grid--4{
     grid-template-columns: repeat(4,1fr);
     gap: 2.4rem;
+}
+
+.grid-justify__align{
+    justify-items: center;
+    align-items: center;
+    /* gap: 0; */
 }
 .heading--secondary{
     font-family: 'Raleway';
@@ -24,7 +38,7 @@ html{
     margin-bottom: 1.5rem;
 }
 .heading--secondary__bg{
-    background-image: url('../img/Shape\ 1.png');
+    background-image: url('../img/Shape-1.png');
     background-repeat: no-repeat;
     background-position: left bottom;
 }

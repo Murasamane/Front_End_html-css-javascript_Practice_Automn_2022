@@ -1,10 +1,82 @@
+@media(max-width:1275px){
+  .grid--4{
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+  .grid__side-text{
+    grid-row: span 2;
+    align-self: center;
+}
+  .heading--secondary__bg {
+    background-image: none;
+  }
+  .slider__1{
+    background-position:center;
+  }
+  .modal{
+    width: 80%;
+  }
+  .grid-justify__align{
+    gap: 3.2rem;
+  }
+}
+
+@media(max-width:860px){
+  .flexbox{
+    flex-direction: column;
+  }
+}
+
+@media(max-width:768px){
+  html{
+    font-size: 50%;
+  }
+  .main-header{
+    position: relative;
+  }
+  .navigation_ul{
+    display: none;
+    position:absolute;
+    width: 100%;
+    max-width: 100%;
+    padding: 2.4rem;
+    top: 80%;
+    left: 50%;
+    backdrop-filter: blur(5px);
+    transform: translateX(-50%);
+    flex-direction: column;
+    z-index: 10000;
+  }
+  .burger__btn{
+    display: block;
+  }
+  .modal{
+    width: 100%;
+  }
+}
+
+
 @media screen and (max-width:600px) {
     .slide{
-      height:fit-content;
+      height:100vh;
     }
     .container{
-  height:200px;}
+  height:300px;}
   .carousel__btn {
       top: 50%;
   }
+  .grid--4{
+    grid-template-columns: 1fr ;
   }
+  .grid__side-text{
+    grid-row: 1;
+}
+  }
+
+@media(max-width:380px){
+  html{
+    font-size: 45%;
+  }
+}

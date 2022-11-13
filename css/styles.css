@@ -1,64 +1,228 @@
 /* /////////////////////////////////////////////////// */
 /* HEADER SECTION */
 /* /////////////////////////////////////////////////// */
-.main-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3.2rem 6.2rem;
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.2rem 6.2rem;
 }
 
-.navigation_ul{
-    display: flex;
-    list-style: none;
-    gap: 3.2rem;
+.main-navigation {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+.navigation_ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 3.2rem;
 }
 
-.nav-anchor{
-    display: inline-block;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 1.6rem;
-    color: #303134;
+.nav-anchor {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #303134;
 }
 
 /* /////////////////////////////////////////////////// */
 /* HOT SERVICES SECTION */
 /* /////////////////////////////////////////////////// */
 
-.hot-services{
-    padding: 4.8rem;
+.burger__btn {
+  background: none;
+  border: none;
+  font-size: 3.2rem;
+  display: none;
 }
 
-.grid__side-text{
-    grid-row: span 3;
+/* /////////////////////////////////////////////////// */
+/* HOT SERVICES SECTION */
+/* /////////////////////////////////////////////////// */
+
+.hot-services {
+  position: relative;
+  padding: 4.8rem;
+  margin-top: 6.2rem;
 }
 
+.grid__side-text {
+  grid-row: span 3;
+}
 
-.card__title{
-    font-family: 'Raleway';
-    font-size: 1.8rem;
+.card__title {
+  font-family: "Raleway";
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1a1a1b;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card__paragraph {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #8d8d8d;
+}
+
+.image__figure {
+  overflow: hidden;
+}
+.card__img {
+  transition: all 0.5s ease-in-out;
+  max-width: 100%;
+}
+.card__img:hover {
+  transform: scale(1.1);
+}
+
+/* /////////////////////////////////////////////////// */
+/* TOUR VIDEO SECTION */
+/* /////////////////////////////////////////////////// */
+.tour__video {
+  background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.579)),
+    url("../img/Rectangle\ 5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: drop-shadow(4px 4px 10px #000);
+  background-color: #1a1a1b;
+  padding: 3.2rem 3.2rem 0 3.2rem;
+  margin-bottom: 6.2rem;
+}
+.video__text {
+  text-align: center;
+}
+.video__title {
+  font-family: "Raleway";
+  font-size: 2.6rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  background-image: url("../img/Shape\ 1.png");
+  background-repeat: no-repeat;
+  padding-bottom: 0.5rem;
+  background-position: center 3rem;
+}
+.video__paragraph {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.video__div {
+  text-align: center;
+}
+.tour__video__youtube {
+  width: 66.3rem;
+  height: 31.4rem;
+  max-width: 100%;
+  border-bottom: 2px solid #4b54fa;
+}
+
+/* /////////////////////////////////////////////////// */
+/* COUNTS SECTION */
+/* /////////////////////////////////////////////////// */
+
+.counts {
+  margin-bottom: 9.8rem;
+}
+.count__cards {
+  text-align: center;
+}
+.count__numbers {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+.count__paragraph {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+/* /////////////////////////////////////////////////// */
+/* POPULAR DESTINATION SECTION */
+/* /////////////////////////////////////////////////// */
+
+.popular--destinations {
+  text-align: center;
+}
+
+.destination__card {
+    box-shadow: 1px 1px 5px 1px rgba(112,112,112,1);
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(112,112,112,1);
+    -moz-box-shadow: 1px 1px 5px 1px rgba(112,112,112,1);
+    position: relative;
+   
+}
+.destination__text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.destination__paragraph{
+    font-family: "Raleway";
     font-weight: 600;
-    color: #1A1A1B;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-
-}
-
-.card__paragraph{
-    font-family:'Raleway';
-    font-weight: 400;
     font-size: 1.6rem;
     color: #8D8D8D;
+    margin-bottom: 1.2rem;
 }
 
-.image__figure{
-    overflow: hidden;
+.destination__main--title{
+    font-family: "Raleway";
+    font-weight: 600;
+    color: #1A1A1B;
+    font-size: 2.6rem;
+    background-image: url('../img/Shape-1.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
-.card__img{
-    transition: all 0.5s ease-in-out;
+
+.destination__price ,
+ .destination__duration{
+    font-family: "Raleway";
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: #1A1A1B;
 }
-.card__img:hover{
-    transform: scale(1.1);
+.destination__title{
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #4b54fa;
+}
+
+
+
+.honeymoon::before{
+    content: 'Honeymoon';
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: #FED701;
+    font-size: 1.4rem;
+    font-family: 'Raleway';
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+.holiday::before{
+    content: 'Honeymoon';
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: #FED701;
+    font-size: 1.4rem;
+    font-family: 'Raleway';
+    font-weight: 600;
+    padding: 0.5rem;
 }

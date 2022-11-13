@@ -39,8 +39,8 @@ const sericesObjArray = [
 
 const dynamicGrid = document.querySelector(".grid__dynamic");
 
-sericesObjArray.forEach( item => {
-    const htmlCard = `
+sericesObjArray.forEach((item) => {
+  const htmlCard = `
     <div class="grid__card">
     <figure class="image__figure">
     <img src="${item.image}" alt="" width="300" height="180.75" class="card__img">
@@ -51,5 +51,40 @@ sericesObjArray.forEach( item => {
     </div>
     </div>
     `;
-    dynamicGrid.innerHTML+=htmlCard;
+  dynamicGrid.innerHTML += htmlCard;
+});
+
+const cards = document.querySelectorAll(".grid__card");
+
+cards.forEach(function (item) {
+  item.addEventListener("click", function (e) {
+    const modal = document.querySelector(".modal");
+    const modalImg = document.querySelector(".modal_img");
+    const modalDescription = document.querySelector(".modal__description");
+
+    modal.style.display = "block";
+    modalImg.setAttribute("src", this.childNodes[1].childNodes[1].src);
+    modalDescription.textContent = this.childNodes[3].childNodes[3].textContent;
+  });
+});
+
+
+const burgerMenu = document.querySelector('.burger__btn');
+const navigation = document.querySelector('.navigation_ul');
+
+burgerMenu.addEventListener('click',()=>{
+  if(navigation.style.display === 'flex'){
+    navigation.style.display = 'none';
+  }else{
+    navigation.style.display = 'flex'
+  }
 })
+
+const resetMenu = () => {
+  if (window.innerWidth > 769) {
+    navigation.style.display = "flex";
+  } else if (window.innerWidth <= 769) {
+    navigation.style.display = "none";
+  }
+};
+window.addEventListener("resize", resetMenu);
