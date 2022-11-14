@@ -20,6 +20,10 @@ html{
 .padded__grid{
     padding: 2.4rem;
 }
+.grid--3{
+    grid-template-columns: repeat(3,1fr);
+    gap: 9.8rem;
+}
 .grid--4{
     grid-template-columns: repeat(4,1fr);
     gap: 2.4rem;
@@ -28,7 +32,6 @@ html{
 .grid-justify__align{
     justify-items: center;
     align-items: center;
-    /* gap: 0; */
 }
 .heading--secondary{
     font-family: 'Raleway';

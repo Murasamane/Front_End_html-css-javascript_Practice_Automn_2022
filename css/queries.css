@@ -23,9 +23,25 @@
   }
 }
 
+@media(max-width:1120px){
+  .grid--3{
+    grid-template-columns:1fr 1fr;
+  }
+  .footer__flexbox{
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+}
+
 @media(max-width:860px){
   .flexbox{
     flex-direction: column;
+  }
+  .subscribe__form{
+    flex-direction: column;
+  }
+  #email{
+    width: 70%;
   }
 }
 
@@ -55,6 +71,10 @@
   .modal{
     width: 100%;
   }
+  .grid--3{
+    gap: 4.8rem;
+  }
+
 }
 
 
@@ -78,5 +98,11 @@
 @media(max-width:380px){
   html{
     font-size: 45%;
+  }
+  .carousel__btn {
+    top: 20%;
+}
+  #email{
+    width: 90%;
   }
 }
