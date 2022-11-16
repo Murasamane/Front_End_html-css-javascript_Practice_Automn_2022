@@ -1,0 +1,45 @@
+.lists{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1.6rem;
+    padding:1.8rem;
+}
+
+
+.companies{
+    width: 100%;
+}
+
+.companies > div{
+    border: 0.1rem solid black;
+    padding: 0.3rem;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+@media(max-width:1000px){
+    .lists{
+        grid-template-columns: repeat(3,1fr);
+        gap: 2.4rem;
+    }
+}
+
+@media(max-width:700px){
+    html{
+        font-size: 56.5%;
+    }
+    .lists{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.6rem;
+    }
+}
+
+@media(max-width:500px){
+    .lists{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

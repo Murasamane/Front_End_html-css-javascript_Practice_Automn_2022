@@ -1,3 +1,4 @@
+'use strict'
 const closeBtn = document.querySelector('.close__btns')
 const modals = document.querySelector('.modal')
 

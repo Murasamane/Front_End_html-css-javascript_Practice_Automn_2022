@@ -51,15 +51,31 @@
 .slider__text{
     text-align: center;
 }
-.slider__1{
-    background-image: url('../img/2.03_Banner_Background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+.sliders{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.slider__1{
+    background-image: url('../img/2.03_Banner_Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider__2{
+    background-image: url('../img/rune-haugseng-727710-unsplash.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider__3{
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider__4{
+    background-image: url('../img/xavier-coiffic-1068988-unsplash.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .slider__promotion{
     font-family: 'Raleway';
     font-size: 2.1rem;

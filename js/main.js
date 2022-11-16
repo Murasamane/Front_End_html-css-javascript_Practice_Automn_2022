@@ -1,3 +1,4 @@
+"use strict";
 const sericesObjArray = [
   {
     image: "img/john-mcarthur-703645-unsplash.png",
@@ -61,26 +62,25 @@ cards.forEach(function (item) {
     const modal = document.querySelector(".modal");
     const modalImg = document.querySelector(".modal_img");
     const modalDescription = document.querySelector(".modal__description");
-    const modalTitle = document.querySelector('.modal__title')
-    console.log(this.childNodes[3].childNodes[1]);
+    const modalTitle = document.querySelector(".modal__title");
+
     modal.style.display = "block";
     modalImg.setAttribute("src", this.childNodes[1].childNodes[1].src);
     modalDescription.textContent = this.childNodes[3].childNodes[3].textContent;
-    modalTitle.textContent = this.childNodes[3].childNodes[1].textContent
+    modalTitle.textContent = this.childNodes[3].childNodes[1].textContent;
   });
 });
 
+const burgerMenu = document.querySelector(".burger__btn");
+const navigation = document.querySelector(".navigation_ul");
 
-const burgerMenu = document.querySelector('.burger__btn');
-const navigation = document.querySelector('.navigation_ul');
-
-burgerMenu.addEventListener('click',()=>{
-  if(navigation.style.display === 'flex'){
-    navigation.style.display = 'none';
-  }else{
-    navigation.style.display = 'flex'
+burgerMenu.addEventListener("click", () => {
+  if (navigation.style.display === "flex") {
+    navigation.style.display = "none";
+  } else {
+    navigation.style.display = "flex";
   }
-})
+});
 
 const resetMenu = () => {
   if (window.innerWidth > 769) {

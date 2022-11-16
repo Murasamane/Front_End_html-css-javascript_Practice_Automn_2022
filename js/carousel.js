@@ -1,3 +1,4 @@
+'use strict'
 let slide = document.getElementsByClassName("slide");
 let autoplay = document
   .getElementsByClassName("container")[0]
